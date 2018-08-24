@@ -18,7 +18,7 @@ import tensorflow as tf
 
 from magenta.models.nsynth import utils
 
-from magenta.magenta.models.nsynth.wavenet import fastgen
+from magenta.models.nsynth.wavenet import fastgen
 
 FLAGS = tf.app.flags.FLAGS
 
