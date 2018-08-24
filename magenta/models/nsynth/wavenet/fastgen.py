@@ -150,6 +150,8 @@ def load_batch(files, sample_length=64000):
             print('sample_length = ' + str(sample_length))
             print('max_length = ' + str(max_length))
             print('data.shape[0]  = ' + str(data.shape[0]))
+            print('data.shape[1]  = ' + str(data.shape[1]))
+            print('data.shape[2]  = ' + str(data.shape[2]))
             print(data)
             batch_data[i] = data[np.newaxis, :, :]
     # Return arrays
