@@ -82,6 +82,7 @@ def main(unused_argv=None):
                      "gen_" + os.path.splitext(os.path.basename(f))[0] + ".wav")
         for f in batch_files
     ]
+    print('loading batch..')
     batch_data = fastgen.load_batch(batch_files, sample_length=sample_length)
     # Encode waveforms
     encodings = batch_data if postfix == ".npy" else fastgen.encode(
