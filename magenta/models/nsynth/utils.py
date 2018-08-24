@@ -63,8 +63,9 @@ def load_audio(path, sample_length=64000, sr=16000):
       out: The audio in samples from -1.0 to 1.0
     """
     audio, _ = librosa.load(path, sr=sr)
-    print('shape = ' + str(audio.shape[0]))
     audio = audio[:sample_length]
+    print('shape0 = ' + str(audio.shape[0]))
+    print('shape1 = ' + str(audio.shape[1]))
     return audio
 
 
