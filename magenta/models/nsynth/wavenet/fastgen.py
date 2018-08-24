@@ -212,3 +212,7 @@ def synthesize(encodings,
             if sample_i % samples_per_save == 0:
                 save_batch(audio_batch, save_paths)
     save_batch(audio_batch, save_paths)
+
+
+if __name__ == '__main__':
+    load_batch(['/home/paperspace/data/sounds/kick1.wav'], 7462)
