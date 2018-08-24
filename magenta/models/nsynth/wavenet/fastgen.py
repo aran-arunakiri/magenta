@@ -148,6 +148,8 @@ def load_batch(files, sample_length=64000):
             batch_data[i] = padded
         else:
             print('sample_length = ' + str(sample_length))
+            print('max_length = ' + str(max_length))
+            print('data.shape[0]  = ' + str(data.shape[0]))
             batch_data[i] = data[np.newaxis, :, :]
     # Return arrays
     batch_data = np.vstack(batch_data)
