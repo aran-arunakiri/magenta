@@ -890,3 +890,7 @@ def linear(x, n_inputs, n_outputs, name):
     y = tf.nn.bias_add(tf.matmul(x[:, 0, :], w[0][0]), b)
     y = tf.expand_dims(y, 1)
     return y
+
+
+if __name__ == '__main__':
+    load_audio('/home/paperspace/data/sounds/kick1.wav')
