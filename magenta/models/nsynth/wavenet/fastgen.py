@@ -133,6 +133,8 @@ def load_batch(files, sample_length=64000):
             batch_data.append(data)
         else:
             data = utils.load_audio(f, sample_length, sr=16000)
+            print 'data loaded, shape0 ='+str(data.shape[0])
+            print 'data loaded, shape1 ='+str(data.shape[1])
             batch_data.append(data)
         if data.shape[0] > max_length:
             max_length = data.shape[0]
