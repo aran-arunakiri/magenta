@@ -20,5 +20,5 @@ print('finished encoding..')
 # np.save(fname + '.npy', encoding)
 print('decoding..')
 
-fastgen.synthesize(encoding, save_paths=['gen_' + fname], samples_per_save=sample_length)
+fastgen.synthesize(encoding, save_paths=['gen_' + fname], checkpoint_path=model_path, samples_per_save=sample_length)
 print('finished decoding..')
