@@ -3,7 +3,7 @@ from magenta.models.nsynth import utils
 from magenta.models.nsynth.wavenet import fastgen
 
 fname = '395058__mustardplug__breakbeat-hiphop-a4-4bar-96bpm.wav'
-fname2 = '395058__mustardplug__breakbeat-hiphop-a4-4bar-96bpm.wav'
+fname2 = 'kick1.wav'
 sr = 16000
 audio = utils.load_audio(fname2, sample_length=40000, sr=sr)
 sample_length = audio.shape[0]
