@@ -34,3 +34,7 @@ def decode(encoding, fname, sample_length, model_path):
     fastgen.synthesize(encoding, save_paths=[outdir + 'gen_' + fname], checkpoint_path=model_path,
                        samples_per_save=sample_length)
     print('finished decoding..')
+
+
+if __name__ == '__main__':
+    start()
