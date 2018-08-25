@@ -10,6 +10,7 @@ def start():
     for subdir, dirs, files in os.walk(rootdir):
         for filex in files:
             file_path = subdir + os.sep + filex
+            print 'processing ' + file_path
             encode(file_path)
 
 
